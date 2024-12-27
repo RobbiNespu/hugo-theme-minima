@@ -1,4 +1,8 @@
-const selectable = '{{ .Site.Params.selectable }}'
-if (selectable === 'false') {
-  document.documentElement.style = 'user-select:none'
+import * as params from '@params';
+
+export function setup_selectable () {
+  const selectable = params.selectable
+  if (!selectable) {
+    document.documentElement.style = 'user-select:none'
+  }
 }

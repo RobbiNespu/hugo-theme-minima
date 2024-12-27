@@ -1,10 +1,12 @@
-.chroma code {
-  color: #d4d4d4;
+.chroma {
+  margin: .5em 0;
+  background-image: var(--back-image);
+  background-color: var(--code-back);
+  border-radius: 2px;
 }
 
-.chroma {
-  background-color: #292929;
-  margin: .5em 0;
+.chroma code {
+  color: var(--code-text);
 }
 
 /* LineTableTD */
@@ -31,10 +33,13 @@
 
 /* LineNumbersTable */
 .chroma .lnt {
-  color: #999;
+  color: var(--code-line-number);
   padding-left: .9em;
   padding-right: 1em;
   text-align: right;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .chroma .hl .lnt {
@@ -50,11 +55,11 @@
 // .chroma .kt,
 .chroma .k,
 .chroma .si {
-  color: #569cd6;
+  color: var(--code-keyword);
 }
 
 .chroma .na {
-  color: #9cdcfe;
+  color: var(--code-attribute);
 }
 
 // .chroma .n,
@@ -69,7 +74,7 @@
 .chroma .fm,
 .chroma .nl,
 .chroma .nn {
-  color: #569cd6;
+  color: var(--code-keyword);
 }
 
 /* NameProperty */
@@ -80,7 +85,7 @@
 .chroma .vg,
 .chroma .vi,
 .chroma .vm {
-  color: #569cd6;
+  color: var(--code-keyword);
 }
 
 /* LiteralString */
@@ -98,7 +103,7 @@
 .chroma .s1,
 .chroma .ss,
 .chroma .cpf {
-  color: #ce9178;
+  color: var(--code-literal-string);
 }
 
 /* LiteralNumber */
@@ -109,7 +114,7 @@
 .chroma .mi,
 .chroma .il,
 .chroma .mo {
-  color: #b5cea8;
+  color: var(--code-literal-number);
 }
 
 /* Comment */
@@ -118,25 +123,25 @@
 .chroma .cm,
 .chroma .c1,
 .chroma .cs {
-  color: #517043;
+  color: var(--code-comment);
 }
 
 .chroma .nb,
 .chroma .kt {
-  color: #4ec9b0;
+  color: var(--code-builtin-type);
 }
 
 .chroma .fm,
 .chroma .nf {
-  color: #dcdcaa;
+  color: var(--code-function);
 }
 
 
 .chroma .cp {
-  color: #c586c0;
+  color: var(--code-meta);
 }
 
 .chroma .hl {
   display: block;
-  background-color: #585858;
+  background-color: var(--code-highlighted-line);
 }

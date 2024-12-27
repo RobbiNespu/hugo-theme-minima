@@ -1,23 +1,24 @@
 # Minima
 
-A clean and minimal Hugo theme porting from [Hexo Minima](https://github.com/adisaktijrs/hexo-theme-minima). Check out the [example site](https://mivinci.github.io/hugo-theme-minima).
+Minima is a clean and minimal Hugo theme originally ported from [Hexo Minima](https://github.com/adisaktijrs/hexo-theme-minima). Check out the [example site](https://mivinci.github.io/hugo-theme-minima).
 
 ![screenshot](./images/tn.png)
 
-> Note that the main branch is in development stage, UI or configuration may vary.
+> Note that the main branch is in development phase, UI or configuration may vary.
 
 
 ## Features
 
-- [x] Dark mode
-- [x] Multilingual mode
-- [x] Code highlighting - VSCode dark+
-- [x] Math - KaTeX
-- [x] Flowcharts - Mermaid
-- [x] Comment - Disqus, Utterances, Giscus
-- [x] Google analytics
-- [x] External link
-- [x] RSS
+- [x] 🌗 Dark mode
+- [x] 📚 Multilingual mode
+- [x] 🏳️‍🌈 Code highlighting - VSCode dark+
+- [x] 🔢 Math - KaTeX
+- [x] 💹 Flowcharts - Mermaid
+- [x] 🧑‍💻 Comment - Disqus, Utterances, Giscus
+- [x] 🔎 Search - FuseJS
+- [x] 〽️ Google analytics
+- [x] 🔗 External link
+- [x] ✉️ RSS
 
 ## Usage
 
@@ -51,11 +52,11 @@ Follow [exampleSite/config.yaml](https://github.com/Mivinci/hugo-theme-minima/bl
 | title       | string | title |
 | description | string | description |
 | date        | string | creation time |
-| categories  | array  | category list |
-| series      | array  | series list |
-| tags        | array  | tag list |
-| math        | bool   | enables math formulas rendering |
-| mermaid     | bool   | enables flowcharts rendering |
+| categories  | array<string>  | category list |
+| series      | array<string>  | series list |
+| tags        | array<string>  | tag list |
+| math        | bool   | enables math plugin |
+| diagram     | bool   | enables diagram plugin |
 | comment     | bool   | enable comment plugin |
 | draft       | bool   | disallow being published |
 | link        | string | a URL to redirect to |
@@ -68,6 +69,10 @@ I'm currently looking for i18n contributors :)
 ## Feedback
 
 Feedbacks are welcome [here](https://github.com/Mivinci/hugo-theme-minima/issues).
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mivinci/hugo-theme-minima&type=Date)](https://star-history.com/#star-history/star-history&Date)
 
 ## License
 
